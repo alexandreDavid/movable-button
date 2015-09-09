@@ -1,0 +1,21 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="../dist/movablebutton.css">
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+	<script src="../src/movablebutton.js"></script>
+    <script>
+        $(function() {
+            $("#myButton").movablebutton({
+				posX: 0,
+				posY: 0,
+				onClick : function() {
+					alert('clicked');
+				}
+			});
+        });
+    </script>
+</head>
+<body>
+<input type='button' id="myButton" class="movablebutton" value='My movable button'>
+</body>
+</html>
